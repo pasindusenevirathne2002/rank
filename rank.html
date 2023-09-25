@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Find Grade</title>
+    </head>
+
+    <body>
+
+        <form>
+            <b>Input Marks:</b><input type="text" id="im" onkeyup="grade()"><br><br>
+            <b>Grade:</b><p id="result"></p>
+        </form>
+        
+    </body>
+
+        <script type="text/javascript">
+            function grade(){
+                var im=document.getElementById("im").value;
+
+                if (im>=75){
+                    document.getElementById("result").innerHTML="A";
+                } else if (im>=65){
+                    document.getElementById("result").innerHTML="B";
+                } else if (im>=50){
+                    document.getElementById("result").innerHTML="C";
+                } else if (im>=35){
+                    document.getElementById("result").innerHTML="S";
+                } else{
+                    document.getElementById("result").innerHTML="W";
+                }
+            }
+        </script>
+
+</html>
